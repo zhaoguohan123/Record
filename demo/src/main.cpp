@@ -1,5 +1,6 @@
 #include <iostream>
 #include <windows.h>
+#include "AutoPtr.h"
 
 /* 1. 使用数组的引用计算数组大小
 不足：#define ARR_SIZE(A) (sizeof(A)/sizeof(A[0]))  这个方式计算数组长度会有问题，因为数组作为函数参数时，会退化为指针，所以sizeof(A)得到的是指针的大小
@@ -23,6 +24,7 @@ namespace COUNT_ARRAY_SIZE
 
 int main()
 {
-    COUNT_ARRAY_SIZE::main();
+    //COUNT_ARRAY_SIZE::main();
+    TestAutoPtr::main();
     return 0;
 }
